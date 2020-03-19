@@ -102,6 +102,28 @@ public class HelloWorld {
 //            i++;
 //        }
 //        System.out.print(myByte);
+
+//        public static int addInts001(int a, int b);
+//        return 0;
+//        return a + b;
+
+//        public static double preformIndicatedOperation011(String operation, double op1, double op2) {
+//            int results;
+//            if(operation.equals("ADD")){
+//                results = op1 + op2;
+//            } else if(operation.equals("SUB")) {
+//                results = op1 - op2;
+//            } else if(operation.equals("MUL")) {
+//                results = op1 * op2;
+//            } else if(operation.equals("DIV")) {
+//                results = op1 / op2;
+//            }
+//            return 0;
+//        }
+//        public static int getNearestIntegerToRealSum013(double firstRealAddend, double secondRealAddend) {
+//            int output = (int) Math.rint(firstRealAddend + secondRealAddend);
+//            return output;
+//        }
     }
 }
 
