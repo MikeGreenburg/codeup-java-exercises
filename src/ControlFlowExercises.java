@@ -1,5 +1,5 @@
-public class ControlFlowExercises {
-}
+//public class ControlFlowExercises {
+//}
 
 //Exercises
 //        For all of the following exercises, create a new class named ControlFlowExercises with a main method. After each exercise, commit your changes, then replace your code in the main method with the next exercise.
@@ -33,8 +33,8 @@ public class ControlFlowExercises {
 //        256
 //        65536
 
-        int a = 2;
-        int counter1 = 0;
+//        int a = 2;
+//        int counter1 = 0;
 
 //        do {
 //        Sytem.out.println("\n=======================");
