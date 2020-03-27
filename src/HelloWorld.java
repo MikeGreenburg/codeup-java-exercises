@@ -1,7 +1,8 @@
-//public class HelloWorld {
-//    public static void main(String[] args) {
-//        System.out.print("Hello");
-//        System.out.print(" World!");
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.print("Hello");
+        System.out.print(" World!");
+    }
 
 //         1. Create an int variable named myFavoriteNumber and assign your favorite number to it, then print it out to the console.
 //        int myFavoriteNumber = 23;
@@ -125,5 +126,5 @@
 //            return output;
 //        }
 //    }
-//}
+}
 
