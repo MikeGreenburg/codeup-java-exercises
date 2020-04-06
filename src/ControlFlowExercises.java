@@ -21,6 +21,43 @@
 //        i++;
 //        }
 //
+//Practice writing While loops
+//        int i = 5;
+//        while (i < 15) {
+//            System.out.println("i is " + i);
+//            i++;
+//        }
+//
+//        int i = 5;
+//        while (i < 15) {
+//            System.out.println("i is " + i);
+//            i++;
+//        }
+//
+//        int i = 6;
+//        while ( i < 20) {
+//            System.out.println("i is " + i);
+//            i++;
+//        }
+//
+//        int i = 23;
+//        while ( i < 100) {
+//            System.out.println("i is " + i);
+//            i++;
+//        }
+//
+//        int i = 2;
+//        while (i < 100) {
+//            System.out.println("i is " + i);
+//            i++;
+//        }
+//
+//        int i = 4;
+//        while (i < 20) {
+//            System.out.println("i is " + i);
+//            i++;
+//        }
+
 //        Do While
 //
 //        Create a do-while loop that will count by 2's starting with 0 and ending at 100. Follow each number with a new line.
@@ -47,6 +84,80 @@
 //        a *= a;
 //        counter1++;
 //        } while (a =< 100000);
+
+// Practice writing Do While loops
+
+        int a = 2;
+        int counter1 = 0;
+
+        do{
+                System.out.println("\n=======================");
+                System.out.println("Current Loop: "+counter1);
+                if(a==0){
+                System.out.print(a);
+                break;
+                }
+                System.out.print("\nValue of a: "+a+"\n");
+                a*=a;
+                counter1++;
+                } while (a =< 100000);
+
+        int b = 5;
+        int counter22 = 0;
+
+        do {
+            System.out.println("\n==========================");
+            System.out.println("Current Loop: " + counter22);
+            if(b == 0){
+                break;
+        }
+            System.out.print("\nValue of b: " + b + "\n");
+            b *= b;
+            counter22++;
+        } while (b =< 2000);
+
+        int c = 1;
+        int counter5 = 0;
+
+        do {
+            System.out.println("\n============================");
+            System.out.println("Current Loop: " + counter5);
+        if (c == 0){
+            break;
+        }
+        System.out.print("\nValue of c: " + c + "\n");
+        c *= c;
+        counter5++;
+        } while (c =< 100);
+
+        int g = 7;
+        int counter12 = 0;
+
+        do {
+            System.out.println("\n============================");
+            System.out.println("Current Loop: " + counter12);
+            if(g == 0){
+                break;
+        }
+            System.out.print("\nValue of g: " + g + "\n");
+            g *= g;
+            counter12++;
+        } while (g =< 5000);
+
+        int z = 1;
+        int counter01 = 1;
+
+        do {
+            System.out.println("\n============================");
+            System.out.println("Current Loop: " + counter01);
+            if(z == 0){
+                break;
+        }
+            System.out.print("\nValue of z: " + z + "\n");
+            z *= z;
+            counter01++;
+        } while (z =< 32768);
+
 
 //        For
 //
