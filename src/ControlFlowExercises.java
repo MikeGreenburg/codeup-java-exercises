@@ -87,76 +87,76 @@
 
 // Practice writing Do While loops
 
-        int a = 2;
-        int counter1 = 0;
-
-        do{
-                System.out.println("\n=======================");
-                System.out.println("Current Loop: "+counter1);
-                if(a==0){
-                System.out.print(a);
-                break;
-                }
-                System.out.print("\nValue of a: "+a+"\n");
-                a*=a;
-                counter1++;
-                } while (a =< 100000);
-
-        int b = 5;
-        int counter22 = 0;
-
-        do {
-            System.out.println("\n==========================");
-            System.out.println("Current Loop: " + counter22);
-            if(b == 0){
-                break;
-        }
-            System.out.print("\nValue of b: " + b + "\n");
-            b *= b;
-            counter22++;
-        } while (b =< 2000);
-
-        int c = 1;
-        int counter5 = 0;
-
-        do {
-            System.out.println("\n============================");
-            System.out.println("Current Loop: " + counter5);
-        if (c == 0){
-            break;
-        }
-        System.out.print("\nValue of c: " + c + "\n");
-        c *= c;
-        counter5++;
-        } while (c =< 100);
-
-        int g = 7;
-        int counter12 = 0;
-
-        do {
-            System.out.println("\n============================");
-            System.out.println("Current Loop: " + counter12);
-            if(g == 0){
-                break;
-        }
-            System.out.print("\nValue of g: " + g + "\n");
-            g *= g;
-            counter12++;
-        } while (g =< 5000);
-
-        int z = 1;
-        int counter01 = 1;
-
-        do {
-            System.out.println("\n============================");
-            System.out.println("Current Loop: " + counter01);
-            if(z == 0){
-                break;
-        }
-            System.out.print("\nValue of z: " + z + "\n");
-            z *= z;
-            counter01++;
-        } while (z =< 32768);
+//        int a = 2;
+//        int counter1 = 0;
+//
+//        do{
+//                System.out.println("\n=======================");
+//                System.out.println("Current Loop: "+counter1);
+//                if(a==0){
+//                System.out.print(a);
+//                break;
+//                }
+//                System.out.print("\nValue of a: " + a + "\n");
+//                a*=a;
+//                counter1++;
+//                } while (a =< 100000);
+//
+//        int b = 5;
+//        int counter22 = 0;
+//
+//        do {
+//            System.out.println("\n==========================");
+//            System.out.println("Current Loop: " + counter22);
+//            if(b == 0){
+//                break;
+//        }
+//            System.out.print("\nValue of b: " + b + "\n");
+//            b *= b;
+//            counter22++;
+//        } while (b =< 2000);
+//
+//        int c = 1;
+//        int counter5 = 0;
+//
+//        do {
+//            System.out.println("\n============================");
+//            System.out.println("Current Loop: " + counter5);
+//        if (c == 0){
+//            break;
+//        }
+//        System.out.print("\nValue of c: " + c + "\n");
+//        c *= c;
+//        counter5++;
+//        } while (c =< 100);
+//
+//        int g = 7;
+//        int counter12 = 0;
+//
+//        do {
+//            System.out.println("\n============================");
+//            System.out.println("Current Loop: " + counter12);
+//            if(g == 0){
+//                break;
+//        }
+//            System.out.print("\nValue of g: " + g + "\n");
+//            g *= g;
+//            counter12++;
+//        } while (g =< 5000);
+//
+//        int z = 1;
+//        int counter01 = 1;
+//
+//        do {
+//            System.out.println("\n============================");
+//            System.out.println("Current Loop: " + counter01);
+//            if(z == 0){
+//                break;
+//        }
+//            System.out.print("\nValue of z: " + z + "\n");
+//            z *= z;
+//            counter01++;
+//        } while (z =< 32768);
 
 
 //        For
@@ -169,6 +169,18 @@
 //        Refactor the previous two exercises to use a for loop instead.
 //        Fizzbuzz
 //
+//        for(int i = 1; i <= 100; i++){
+//                if(i % 15 == 0){
+//                System.out.println("FizzBuzz");
+//                } else if (i % 3 == 0){
+//                System.out.println("Fizz");
+//                } else if (i % 5 == 0){
+//                System.out.println("Buzz");
+//                } else {
+//                System.out.println(i);
+//                }
+//                }
+
 //        One of the most common interview questions for entry-level programmers is the FizzBuzz test. Developed by Imran Ghory, the test is designed to assess basic looping and conditional logic skills.
 //
 //        Write a program that prints the numbers from 1 to 100.
@@ -177,6 +189,8 @@
 //        For numbers which are multiples of both three and five: print “FizzBuzz”.
 //        Display a table of powers.
 //
+
+
 //        Prompt the user to enter an integer.
 //        Display a table of squares and cubes from 1 to the value entered.
 //        Ask if the user wants to continue.
@@ -197,6 +211,30 @@
 //        4      | 16      | 64
 //        5      | 25      | 125
 //        Convert given number grades into letter grades.
+
+//            Scanner input = new Scanner(System.in);
+//
+//                    String userConfirm = "Y";
+//
+//                    while(userConfirm.equalsIgnoreCase("y")){
+//                    System.out.println("What number would you like to go up to?");
+//                    int num = Integer.parseInt(input.nextLine());
+//
+//
+//                    System.out.println("Here is your table!");
+//                    System.out.println("number | squared | cubed");
+//                    System.out.println("------ | ------- | -----");
+//
+//                    for(int counter = 1; counter <= num; counter++){
+//                    System.out.printf("%-6d | %-7d | %d%n", counter, counter*counter, counter*counter*counter);
+//                    }
+//
+//                    System.out.println("Would you like to test another number? Y/N");
+//                    userConfirm = input.nextLine();
+//
+//                    }
+//
+//                    System.out.println("Ok, have a nice day!");
 //
 //        Prompt the user for a numerical grade from 0 to 100.
 //        Display the corresponding letter grade.
@@ -213,3 +251,29 @@
 //        Bonus
 //
 //        Edit your grade ranges to include pluses and minuses (ex: 99-100 = A+).
+
+//        boolean gradeContinue = true;
+//                do {
+//                System.out.println("Please enter a number grade");
+//                int numericGrade = input.nextInt();
+//
+//                if(numericGrade >= 88) {
+//                System.out.println("A");
+//                } else if (numericGrade >= 80){
+//                System.out.println("B");
+//                } else if (numericGrade >= 67) {
+//                System.out.println("C");
+//                } else if (numericGrade >= 60){
+//                System.out.println("D");
+//                } else {
+//                System.out.println("F");
+//                }
+//
+//                System.out.println("Would you like to enter a new grade? (y/n)");
+//                String userResponse = input.next();
+//
+//                if(!userResponse.equalsIgnoreCase("y")){
+//                gradeContinue = false;
+//                }
+//
+//                }while (gradeContinue);
