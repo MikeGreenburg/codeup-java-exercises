@@ -102,7 +102,10 @@ public class MoviesArray {
                 new Movie("Bringing Up Baby", "drama"),
                 new Movie("Unforgiven", "drama"),
                 new Movie("Guess Who's Coming To Dinner", "drama"),
-                new Movie("Yankee Doodle Dandy", "musical")
+                new Movie("Yankee Doodle Dandy", "musical"),
+                new Movie("Blackhawk Down", "action"),
+                new Movie("Action Jackson", "action"),
+                new Movie("Along Came A Spider", "thriller")
         };
     }
 }
