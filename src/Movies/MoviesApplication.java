@@ -4,6 +4,7 @@ import util.Input;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.*;
 
 public class MoviesApplication {
 
@@ -11,12 +12,12 @@ public class MoviesApplication {
     static Input input;
 
     public static void main(String[] args) throws Exception {
-        //Give the user a list of options for viewing all the movies or viewing movies by category.
+        //Give user list of options for viewing all movies or movies by category.
         //Use your Input class to get input from the user, and display information based on their choice. (Remember to import your Input class)
         //If a category is selected, only movies from that category should be displayed.
         //Your application should continue to run until the user chooses to exit.
 
-        //Give the user a list of options for viewing all the movies or viewing movies by category.
+        //Give user list of options for viewing all movies or movies by category.
         input = new Input();
         Movie[] movieList = MoviesArray.findAll();
 
@@ -26,13 +27,13 @@ public class MoviesApplication {
         int choice;
         do {
             System.out.println();
-            System.out.println("What would you like to do?");
+            System.out.println("What do you want to do?");
             System.out.println("");
             System.out.println("\t0 - exit");
             System.out.println("\t1 - view all movies");
             System.out.println("\t2 - Add a movie");
 
-            // Loop through all the genres
+            // Loop through genres
             int count = 3;
             for (String genre : genres) {
                 System.out.println("\t" + count + " - view movies in the " + genre + " category");
@@ -44,7 +45,7 @@ public class MoviesApplication {
 
             // Set up a switch statement to choose what to display / do
             if (choice != 0 && choice != 2) {
-                // iterate through all movies and print them out based on user's input choice
+                // iterate through movies, print out based on user's input
                 for (Movie movie : movieList) {
                     switch (choice) {
                         case 1:
@@ -63,17 +64,17 @@ public class MoviesApplication {
                 genres = getGenres(movieList);
             }
         } while (choice != 0);
-        // User must have typed 0, so time to exit
+        // User typed 0, so time to exit
         System.out.println("\tGoodbye!");
 
     }
 
     private static Movie[] addMovie(Movie[] movieList) throws Exception {
-        // if the user wants to add a movie, get the title and category, and add to the MovieList array
-        String name = input.getString("Enter the movie name: ");
-        String category = input.getString("Enter the movie category: ");
+        // if user wants to add movie, get title and category, add to MovieList array
+        String name = input.getString("Enter movie name: ");
+        String category = input.getString("Enter movie category: ");
 
-        // create a new Movie object
+        // create new Movie object
         Movie newMovie = new Movie(name, category);
         Movie[] newList = null;
         int length = 0;
@@ -81,10 +82,10 @@ public class MoviesApplication {
         if (movieList != null) {
             newList = Arrays.copyOf(movieList, movieList.length + 1);
         } else {
-            newList = new Movie[1]; // empty list was passed in, so return list will only have the one new movie in it
+            newList = new Movie[1]; // empty list passed, return list will only have new movie
         }
 
-        // add the new Movie to our MovieList array
+        // add new Movie to MovieList array
         newList[newList.length-1] = newMovie;
 
         return newList;
@@ -93,11 +94,11 @@ public class MoviesApplication {
     private static String[] getGenres(Movie[] oldList) {
         int count = 1;
         String categories = oldList[0].getCategory();
-//        System.out.println(oldList.length);
+        System.out.println(oldList.length);
         // "drama,action,horror"
 
         for (Movie movie : oldList) {
-//            System.out.println(movie.getName());
+            System.out.println(movie.getName());
             if (!categories.contains(movie.getCategory())) {
                 if (count > 0) {
                     categories += ",";
@@ -105,8 +106,8 @@ public class MoviesApplication {
                 categories += movie.getCategory();
                 count++;
             }
-//            System.out.println(categories);
-//            System.out.println(count);
+            System.out.println(categories);
+            System.out.println(count);
         }
 
         return categories.split(",");
