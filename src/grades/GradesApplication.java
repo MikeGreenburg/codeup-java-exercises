@@ -21,28 +21,28 @@ public class GradesApplication {
 
     public static HashMap<String, Student> studentList() {
         Student anthony = new Student("Anthony");
-        anthony.addGrade(89);
-        anthony.addGrade(79);
-        anthony.addGrade(69);
-        anthony.addGrade(59);
+        anthony.addGrade(85);
+        anthony.addGrade(65);
+        anthony.addGrade(88);
+        anthony.addGrade(92);
 
         Student ernie = new Student("Ernie");
-        ernie.addGrade(49);
-        ernie.addGrade(49);
-        ernie.addGrade(49);
-        ernie.addGrade(49);
+        ernie.addGrade(77);
+        ernie.addGrade(89);
+        ernie.addGrade(69);
+        ernie.addGrade(84);
 
         Student mike = new Student("Mike");
-        mike.addGrade(94);
-        mike.addGrade(94);
-        mike.addGrade(94);
-        mike.addGrade(94);
+        mike.addGrade(98);
+        mike.addGrade(81);
+        mike.addGrade(77);
+        mike.addGrade(83);
 
         Student felicia = new Student("Felicia");
+        felicia.addGrade(93);
         felicia.addGrade(100);
-        felicia.addGrade(100);
-        felicia.addGrade(100);
-        felicia.addGrade(100);
+        felicia.addGrade(86);
+        felicia.addGrade(83);
 
         HashMap<String, Student> students = new HashMap<>();
         students.put("torres", anthony);
