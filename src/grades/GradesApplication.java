@@ -16,50 +16,50 @@ public class GradesApplication {
             studentPrinter(students);
             yesNo = userInput.yesNo();
         } while (yesNo);
-        System.out.println("Thanks for visiting.");
+        System.out.println("Thanks for your visit.");
     }
 
     public static HashMap<String, Student> studentList() {
-        Student neil = new Student("Neil");
-        neil.addGrade(89);
-        neil.addGrade(79);
-        neil.addGrade(69);
-        neil.addGrade(59);
+        Student anthony = new Student("Anthony");
+        anthony.addGrade(89);
+        anthony.addGrade(79);
+        anthony.addGrade(69);
+        anthony.addGrade(59);
 
-        Student okembe = new Student("Okembe");
-        okembe.addGrade(49);
-        okembe.addGrade(49);
-        okembe.addGrade(49);
-        okembe.addGrade(49);
+        Student ernie = new Student("Ernie");
+        ernie.addGrade(49);
+        ernie.addGrade(49);
+        ernie.addGrade(49);
+        ernie.addGrade(49);
 
-        Student nicole = new Student("Nicole");
-        nicole.addGrade(94);
-        nicole.addGrade(94);
-        nicole.addGrade(94);
-        nicole.addGrade(94);
+        Student mike = new Student("Mike");
+        mike.addGrade(94);
+        mike.addGrade(94);
+        mike.addGrade(94);
+        mike.addGrade(94);
 
-        Student chris = new Student("Chris");
-        chris.addGrade(100);
-        chris.addGrade(100);
-        chris.addGrade(100);
-        chris.addGrade(100);
+        Student felicia = new Student("Felicia");
+        felicia.addGrade(100);
+        felicia.addGrade(100);
+        felicia.addGrade(100);
+        felicia.addGrade(100);
 
         HashMap<String, Student> students = new HashMap<>();
-        students.put("doogeyHowser", neil);
-        students.put("mutumbo", okembe);
-        students.put("navkell", nicole);
-        students.put("kelleyc718", chris);
+        students.put("torres", anthony);
+        students.put("greenburg", mike);
+        students.put("cespedes", felicia);
+        students.put("brown", ernie);
 
         return students;
     }
 
     private static void studentPrinter(HashMap<String, Student> students) {
-        System.out.println("\nHere are the GitHub usernames of our students: \n");
+        System.out.println("\nHere are the names of the students: \n");
         for (String key : students.keySet()) {
             System.out.print("| " + key + " | ");
         }
         System.out.print(" | all | \n");
-        System.out.println("\nWhat student would you like information on?\n");
+        System.out.println("\nWhat student would you like to look up?\n");
         String studentSearch = userInput.getString();
 
         if (studentSearch.equalsIgnoreCase("all")) {
@@ -68,9 +68,9 @@ public class GradesApplication {
         } else if (students.containsKey(studentSearch)) {
             studentFound(studentSearch);
         } else {
-            System.out.println("\nStudent does not exist\n");
+            System.out.println("\nInvalid student\n");
         }
-        System.out.println("\nWant to see another student?\n");
+        System.out.println("\nDo you want to see another student?\n");
     }
 
     public static void listAll() {
