@@ -50,4 +50,3 @@ public class Movie {
         return Objects.hash(name, category);
     }
 }
-}
