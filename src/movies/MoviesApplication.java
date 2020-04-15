@@ -56,7 +56,7 @@ public class MoviesApplication {
         System.out.println("5 - drama");
         System.out.println("6 - thriller");
         System.out.println("7 - action");
-        System.out.println("8 - Add new movie");
+        System.out.println("8 - Add a new movie");
         System.out.println("9 - Search movie");
         System.out.print("Enter choice: \n");
     }
@@ -90,7 +90,7 @@ public class MoviesApplication {
 
 
     public static void movieSearch() {
-        System.out.println("Enter name of movie you are looking for: ");
+        System.out.println("Enter movie you are looking for: ");
         String name = userInput.getString();
         Movie movie = new Movie(name);
         if (movies.contains(movie)) {
