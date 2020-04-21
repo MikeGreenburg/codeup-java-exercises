@@ -3,21 +3,20 @@ import java.util.Arrays;
 public class ArraysExercises {
 
     public static void main(String[] args) {
-        // why does this need a toString?
         int[] numbers = {1, 2, 3, 4, 5};
 //        System.out.println(Arrays.toString(numbers)); // array is just a pointer to location in memory
 
 
 
-        //Create an array that holds 3 Person objects.
+        //Create array that holds 3 Person objects.
         Person[] people = new Person[3];
 
-        // Assign a new instance of the Person class to each element.
+        // Assign new instance of Person class to each element.
         people[0] = new Person("Casey");
         people[1] = new Person("Vivian");
         people[2] = new Person("Trant");
 
-        // Iterate through the array and print out the name of each person in the array.
+        // Iterate through array, print out name of each person in array.
         for(Person person : people) {
             System.out.println("\t" + person.getName());
         }
@@ -40,7 +39,7 @@ public class ArraysExercises {
         for(int i=0; i < inputPeople.length; i++) {
             newPeeps[i] = inputPeople[i];
         }
-        // we have all but the last person assigned to the array
+        //all but last person assigned to array
 
         newPeeps[newPeeps.length-1] = inputPerson;
 

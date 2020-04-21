@@ -20,7 +20,7 @@ public class Person {
     public static void main(String[] args) {
 
         // test person methods
-        String testName = "James";
+        String testName = "Teddy";
         Person person = new Person(testName);
         if (person.getName().equals(testName)) {
             person.sayHello();
@@ -36,7 +36,7 @@ public class Person {
             System.out.println("name mis-match");
         }
 
-        // EX 2: understanding references
+        // understanding references
         demoExercise02();
     }
 
@@ -61,10 +61,10 @@ public class Person {
 
         person1 = new Person("John");
         person2 = person1;
-        System.out.println(person1.getName()); // John
-        System.out.println(person2.getName()); // John
+        System.out.println(person1.getName()); // Billy
+        System.out.println(person2.getName()); // Billy
         person2.setName("Jane");
-        System.out.println(person1.getName()); // Jane
-        System.out.println(person2.getName()); // Jane
+        System.out.println(person1.getName()); // Mary
+        System.out.println(person2.getName()); // Mary
     }
 }
