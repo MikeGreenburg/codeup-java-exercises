@@ -1,6 +1,6 @@
-package HelloWorld3;
+package helloworld3;
 
-public class HelloWorld3 {
+public class HelloWorld {
 
     public static void main(String [] args) {
         //Print the words Hello World on the screen
