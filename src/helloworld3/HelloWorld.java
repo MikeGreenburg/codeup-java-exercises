@@ -21,6 +21,19 @@ public class HelloWorld {
         String message = "Hellow World";
         String secondSubstring = message.substring(1, 8);
         //Returns "ello Wo"
+
+        char myChar = "Hello World".charAt(1);
+        //Returns "e"
+
+        boolean equalsOrNot = "This is Jamie".equals("This is Jamie");
+        //Returns true
+
+        boolean equalsOrNot2 = "This is Jamie".equals("Hello World");
+        //Returns false
+
+        String names = "Peter, John, Andy, David";
+        String[] splitNames = names.split(", ");
+        //Returns {"Peter", "John", "Andy", "David"}
     }
 
 }
