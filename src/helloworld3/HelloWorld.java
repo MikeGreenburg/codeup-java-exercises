@@ -34,6 +34,20 @@ public class HelloWorld {
         String names = "Peter, John, Andy, David";
         String[] splitNames = names.split(", ");
         //Returns {"Peter", "John", "Andy", "David"}
+
+        //2 ways to declare a variable preferred
+        //First part "int" determines what value is stored, Second part "[]" determines that it will be an array, Third part "userAge" is the arrays name.
+        int[] userAge1;
+
+        //This was adopted for C/C++ programmers not preferred
+        int userAge2[];
+
+        //First statement declares the array variable userAge
+        int[] userAge;
+        //The second statement creates the array {21, 22, 23, 24, 25} and assigns it to userAge
+        userAge = new int[] {21, 22, 23, 24, 25};
+
+
     }
 
 }
