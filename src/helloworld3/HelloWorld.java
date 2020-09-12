@@ -12,6 +12,8 @@ public class HelloWorld {
         System.out.println(myLength);
         //Returns 11
 
+        //STRINGS
+
         String uCase = "Hello World".toUpperCase();
         //Returns "HELLO WORLD"
 
@@ -31,6 +33,9 @@ public class HelloWorld {
         boolean equalsOrNot2 = "This is Jamie".equals("Hello World");
         //Returns false
 
+
+        //ARRAYS
+
         String names = "Peter, John, Andy, David";
         String[] splitNames = names.split(", ");
         //Returns {"Peter", "John", "Andy", "David"}
@@ -40,12 +45,21 @@ public class HelloWorld {
         int[] userAge1;
 
         //This was adopted for C/C++ programmers not preferred
-        int userAge2[];
+//        int userAge2[];
 
         //First statement declares the array variable userAge
         int[] userAge;
         //The second statement creates the array {21, 22, 23, 24, 25} and assigns it to userAge
         userAge = new int[] {21, 22, 23, 24, 25};
+
+        //Combine two statements into a single statement using this shortcut
+        int[] userAge2 = new int[] {21, 22, 23, 24, 25};
+
+        //Simplified you can declare and initialize an array in the same statement and omit "new int[]"
+        int[] userAge2 = {21, 22, 23, 24, 25};
+
+        //Third way to declare and initialize an array default values are (0, 0, 0, 0, 0,)
+        int[] userAge3 = new int[5];
 
 
     }
