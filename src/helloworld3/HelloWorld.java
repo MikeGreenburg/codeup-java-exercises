@@ -1,6 +1,7 @@
 package helloworld3;
 
 import java.text.MessageFormat;
+import java.util.Arrays;
 
 public class HelloWorld {
 
@@ -61,7 +62,41 @@ public class HelloWorld {
         //Third way to declare and initialize an array default values are (0, 0, 0, 0, 0,)
         int[] userAge3 = new int[5];
 
+        //Update array integers as follows this changes the array to {31, 22, 23, 24, 25}
+        userAge[0] = 31;
 
+        //If we type the following the array becomes {31, 22, 43, 24, 25}
+        userAge[2] = userAge[2] + 20;
     }
+
+    //ARRAY METHODS
+
+    //In order to use array methods we need the following and must appear after the package statement and before the class declaration
+    import java.util.Arrays;
+
+
+    //Example
+//    package helloworld;
+//
+//    import java.util.Arrays;
+//
+//    public class HelloWorld {
+        //code for HelloWorld class
+//    }
+
+    //equals() is used to determine if two arrays are equal to each other and returns true or false
+    int[] arr1 = {0, 2, 4, 6, 8, 10};
+    int[] arr2 = {0, 2, 4, 6, 8, 10};
+    int[] arr3 = {10, 8, 6, 4, 2, 0};
+
+    boolean result1 = Arrays.equals(arr1, arr2); //returns true
+    boolean result2 = Arrays.equals(arr1, arr3); //returns false because elements are not arranged the same
+
+    //copyOfRanged() allows you to copy the contents of one array into another and requires three arguments
+    int[] source = {12, 1, 5, -2, 16, 14, 18, 20, 25};
+
+    //To copy contents use the first argument "source" is the array that provides the values to be copied. The next two arguments tell the compiler which indexes to start and stop copying. Returns {-2, 16, 14, 18} while "source" remains unchanged.
+    int[] dest = Arrays.copyOfRange(source, 3, 7);
+
 
 }
