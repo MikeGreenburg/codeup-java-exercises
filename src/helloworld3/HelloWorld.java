@@ -98,5 +98,35 @@ public class HelloWorld {
     //To copy contents use the first argument "source" is the array that provides the values to be copied. The next two arguments tell the compiler which indexes to start and stop copying. Returns {-2, 16, 14, 18} while "source" remains unchanged.
     int[] dest = Arrays.copyOfRange(source, 3, 7);
 
+    //toString returns a String that represents the contents of an array.
+    int[] numbers = { 1, 2, 3, 4, 5};
+
+    //use below to display contents of the numbers array
+    System.out.println(Arrays.toString(numbers));
+
+    //Returns [1, 2, 3, 4, 5]
+
+    //sort() allows for arrays to be sorted. It takes in an array as the argument
+    int[] numbers2 = {12, 1, 5, -2, 16, 14};
+
+    //below will sort the array in ascending order
+    Arrays.sort(numbers2);
+
+    System.out.println(Arrays.toString(numbers2));
+
+    //Returns {-2, 1, 5, 12, 14, 16}
+
+
+    //binarySearch() allows you to search for a specific value in a sorted array
+    int[] myInt = {21, 23, 34, 45, 56, 78, 99};
+
+    //to determine if 78 is in the array use the following
+    int foundIndex = Arrays.binarySearch(myInt, 78);
+
+    //foundIndex will return 5
+
+    int foundIndex2 = Arrays.binarySearch(myInt, 39);
+
+    //foundIndex will return -4 the "-" means that 39 is not found and the 4 tells you where it should exist in the array and adds one to that result.
 
 }
