@@ -13,7 +13,7 @@ public class HelloWorld {
         System.out.println(myLength);
         //Returns 11
 
-        //STRINGS
+        //      STRINGS
 
         String uCase = "Hello World".toUpperCase();
         //Returns "HELLO WORLD"
@@ -35,7 +35,7 @@ public class HelloWorld {
         //Returns false
 
 
-        //ARRAYS
+        //      ARRAYS
 
         String names = "Peter, John, Andy, David";
         String[] splitNames = names.split(", ");
@@ -69,7 +69,7 @@ public class HelloWorld {
         userAge[2] = userAge[2] + 20;
     }
 
-    //ARRAY METHODS
+    //        ARRAY METHODS
 
     //In order to use array methods we need the following and must appear after the package statement and before the class declaration
     import java.util.Arrays;
@@ -128,5 +128,13 @@ public class HelloWorld {
     int foundIndex2 = Arrays.binarySearch(myInt, 39);
 
     //foundIndex will return -4 the "-" means that 39 is not found and the 4 tells you where it should exist in the array and adds one to that result.
+
+    //      FINDING ARRAY LENGTH
+
+    int[] userAge = {21, 22, 26, 32, 40};
+
+    userAge.length; //returns 5 because there are 5 ages in the array
+
+
 
 }
