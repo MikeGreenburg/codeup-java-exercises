@@ -103,17 +103,16 @@ public class HelloWorld {
 
     //use below to display contents of the numbers array
     System.out.println(Arrays.toString(numbers));
-
     //Returns [1, 2, 3, 4, 5]
 
     //sort() allows for arrays to be sorted. It takes in an array as the argument
     int[] numbers2 = {12, 1, 5, -2, 16, 14};
 
     //below will sort the array in ascending order
+
     Arrays.sort(numbers2);
 
     System.out.println(Arrays.toString(numbers2));
-
     //Returns {-2, 1, 5, 12, 14, 16}
 
 
@@ -122,12 +121,10 @@ public class HelloWorld {
 
     //to determine if 78 is in the array use the following
     int foundIndex = Arrays.binarySearch(myInt, 78);
-
     //foundIndex will return 5
 
     int foundIndex2 = Arrays.binarySearch(myInt, 39);
-
-    //foundIndex will return -4 the "-" means that 39 is not found and the 4 tells you where it should exist in the array and adds one to that result.
+    //foundIndex will return -4 the "-" means that 39 is not found and the 4 tells you where it should exist in the array and adds one to that result, 3+1 = 4..
 
     //      FINDING ARRAY LENGTH
 
@@ -138,15 +135,45 @@ public class HelloWorld {
     //     DISPLAYING OUTPUT
 
     System.out.ptintln("Hello ");
-    System.out.println("How are yout?");
+    //Returns "Hello"
 
+    System.out.println("How are yout?");
     //Returns "Hello
     //How are you?
 
     System.out.print("Hello");
     System.out.print("How are you?");
-
     //Returns "Hello How are you?"
 
+    //Displaying simple text
 
+    System.out.println("Hi, my name is Jamie");
+    //Returns "Hi, my name is Jamie
+
+    //Displaying the value of a variable
+    int number = 30;
+
+    System.out.println(number);
+    //Returns 30
+    //If number is written ("number") output will be number since it is in string form
+
+    //Displaying results without assigning them to variables
+    System.out.println(35+5);
+    //Returns 35
+    //To display the result method use
+    System.out.println("Oracle".substring(1, 4));
+    //Retuns "rac" as 1 tells it to start at this index and it stops at index 4 but does not include it.
+
+    //Using Concatenation sign
+    System.out.println("Hello, " + "how are you?" + " I love Java.");
+    //Returns "Hello, how are you? I love Java."
+
+    //Concatenate strings with variables
+    int results = 79;
+    System.out.println("You scored " + results + " marks for your test.");
+    //Returns "You scored 79 marks for your test."
+
+    //Concatenate strings with mathematical expressions
+    System.out.println("The sum of 50 and 2 is " + (50 + 2) + ".");
+    //Returns The sum of 50 and 2 is 52
 }
