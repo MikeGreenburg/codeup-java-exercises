@@ -204,8 +204,28 @@ public class HelloWorld {
     //So instead use printf
 
     System.out.printf("The answer for %.3f divided by %d is %.2f.", 5.45, 3, 5.45/3);
-    //Returns The answer for 5.450 divided by 3 is 1.82 I passed four arguments but only one is needed.
+    //Returns The answer for 5.450 divided by 3 is 1.82. I passed four arguments but only one is needed.
+    //The f in %.3f represents a float
+    //The d in %d represents a double
+    //The first %.3f is replaced by the first argument that is 5.45. The 3 in %.3f represents the 3 decimal points (.450)
+    //The second %d is replaced by the second argument 3
+    //The third %.2f is represented by the answer. The 2 in %.2f represents the 2 decimal points (.82)
 
+    //     CONVERTERS
 
+    //Used for formatting integers
+    System.out.printf("%d", 12);
+    //Returns 12
+
+    System.out.printf("%d", 12.9);
+    //Returns an error as 12.9 is not an integer
+
+    System.out.printf("%f", 12);
+    //Returns an error as 12 is not a floating point number
+
+    //Newline converter n
+    System.out.printf("%d%n%d", 12, 3);
+    //Returns 12
+    //3
 
 }
