@@ -135,6 +135,18 @@ public class HelloWorld {
 
     userAge.length; //returns 5 because there are 5 ages in the array
 
+    //     DISPLAYING OUTPUT
+
+    System.out.ptintln("Hello ");
+    System.out.println("How are yout?");
+
+    //Returns "Hello
+    //How are you?
+
+    System.out.print("Hello");
+    System.out.print("How are you?");
+
+    //Returns "Hello How are you?"
 
 
 }
