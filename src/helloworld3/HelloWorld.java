@@ -175,5 +175,37 @@ public class HelloWorld {
 
     //Concatenate strings with mathematical expressions
     System.out.println("The sum of 50 and 2 is " + (50 + 2) + ".");
-    //Returns The sum of 50 and 2 is 52
+    //Returns The sum of 50 and 2 is 52 the () with the "50 + 2" forces the compiler to evaluate the expression first to avoid errors.
+
+    //    ESCAPE SEQUENCES
+
+    //Use \ as the escape character to print characters that would otherwise have different meanings
+    System.out.println("Hello\tWorld");
+    //Returns "Hello     World" with a tab or 5 spaces inbetween them.
+
+    //Print a new line (\n)
+    System.out.println("Hello\nWorld");
+    //Returns "Hello
+    //World"
+
+    //Print \ character (\\)
+    System.out.println("\\");
+    //Returns \
+
+    //Print double quotes (\")
+    System.out.println("I am 5'9\" tall");
+    //Returns I am 5 '9" tall
+
+
+    //     FORMATTING OUTPUTS
+
+    System.out.println("The answer for 5.45 divided by 3 is " + (5.45/3));
+    //Returns The answer for 5.45 divided by 3 is 1.8166666666666667
+    //So instead use printf
+
+    System.out.printf("The answer for %.3f divided by %d is %.2f.", 5.45, 3, 5.45/3);
+    //Returns The answer for 5.450 divided by 3 is 1.82 I passed four arguments but only one is needed.
+
+
+
 }
