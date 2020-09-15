@@ -213,6 +213,7 @@ public class HelloWorld {
 
     //     CONVERTERS
 
+    //Integer converter d
     //Used for formatting integers
     System.out.printf("%d", 12);
     //Returns 12
@@ -227,5 +228,24 @@ public class HelloWorld {
     System.out.printf("%d%n%d", 12, 3);
     //Returns 12
     //3
+
+    //The width flag
+    //Is used to specify total width
+    System.out.printf("%8d", 12);
+    //Returns       12 with 6 spaces in front of the 12 to give it a total width of 8
+
+    System.out.printf("%8.2f", 12.4);
+    //Returns    12.40 with 3 spaces in front of the 12.40 for a total width of 8 including the decimal point
+
+    //Thousands separator flag (,)
+    //Used to display numbers with a thousands separator
+    System.out.printf("%,d", 12345);
+    //Returns 12,345
+
+    System.out.printf("%,.2f", 12345.56789);
+    //Returns 12,345.57
+
+
+
 
 }
